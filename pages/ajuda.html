@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Agroberry Admin Page </title>
+        <link rel="icon" type="image/x-icon" href="../images/agroberry-low-resolution-logo-white-on-transparent-background.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/admin.css"/>
+        <script src="../js/admin.js"> </script>
+        <script type="module" src="../js/auth.js"></script>
+
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <header class="grid-container-header">
+                <div class="menu-icon" onclick="openSidebar()">
+                    <span class="material-icons-outlined"> menu </span>
+                </div>
+                <div class="header-left" id="running"> </div>
+                <div class="header-right">
+                    <span class="text-primary" id="user"> </span>
+                    <span class="material-icons-outlined"> account_circle </span>
+                </div>
+            </header>
+
+            <aside id="sidebar">
+                <div class="sidebar-title">
+                    <div class="sidebar-brand">
+                        <img class="logo-img" src="/images/agroberry-low-resolution-logo-color-on-transparent-background.png">
+                    </div>
+                    <span class="material-icons-outlined menu-icon" onclick="closeSidebar()"> close </span>
+                </div>
+
+                <ul class="sidebar-list">
+                    <a href="../index.html">
+                        <li class="sidebar-list-item">
+                            <span class="material-icons-outlined">dashboard</span> Dashboard
+                        </li>
+                    </a>
+                    <a href="../pages/sheets.html">
+                        <li class="sidebar-list-item">
+                            <span class="material-icons-outlined">dataset</span> Tabela
+                        </li>
+                    </a>
+                    <a href="../pages/monitor.html">
+                        <li class="sidebar-list-item">
+                            <span class="material-icons-outlined">auto_graph</span> Monitor Gráfico
+                        </li>
+                    </a>
+                    </a>
+                    <a href="../pages/ajuda.html">
+                        <li class="sidebar-list-item">
+                            <span class="material-icons-outlined">help_outline</span> Ajuda
+                        </li>
+                    </a>
+                    <a id="signoutIndex">
+                        <li class="sidebar-list-item">
+                            <span class="material-icons-outlined">logout</span> Sair
+                        </li>
+                    </a>
+                </ul>
+            </aside>
+
+            <main class="main-container">
+                <div class="main-title">
+                    <p class="font-weight-bold"> Ajuda e informações </p>
+                </div>
+
+                <p class="text-style"> Dentre as principais condições que interferem na plantação de morangos, destacam-se os parâmetros de umidade do solo, umidade do ar e temperatura.
+                    Sendo assim, é de extrema importância compreender e averiguar esses fatores, uma vez que o fruto de morangueiros é sensível à bruscas alterações climáticas e ambientais.
+                    Abaixo, os indicadores são apresentados, com suas escalas de valores recomendados, considerando o crescimento adequado e saudável do morango.
+                    Vale ressaltar que essas medidas são adotadas por esta aplicação, sendo classificadas como ideais.
+                </p>
+
+                <hr/>
+                <br/>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="row para-style"> <strong> Umidade do solo </strong> </div>
+                        <div class="row para-style"> <p> <strong> 41% a 60% </strong> </p> </div>
+                        <div class="row content-style"> O solo da cultura deve reter entre 41% e 60% de umidade. <br/> <br/> <em> Acurite, 2018. </em> </div>
+                    </div>
+                    <div class="column"> 
+                        <div class="row para-style"> <strong> Umidade do ar </strong> </div>
+                        <div class="row para-style"> <p> <strong> 65% a 75% </strong> </p> </div>
+                        <div class="row content-style"> A fruta deve ser exposta à uma umidade relativa do ar entre 65% e 75%. <br/> <br/> <em> Lieten, 2002. </em> </div>
+                    </div>
+                    <div class="column"> 
+                        <div class="row para-style"> <strong> Temperatura </strong> </div>
+                        <div class="row para-style"> <p> <strong> 15ºC a 25ºC  </strong> </p> </div>
+                        <div class="row content-style"> A temperatura indicada para realizar a plantação de morangos é entre 15ºC e 25ºC. <br/> <br/> <em> Oliveira et al., 2006. </div>
+                    </div>
+                </div>
+
+                <br/>
+                <hr/>
+    </body>
+</html>
