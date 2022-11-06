@@ -78,7 +78,7 @@ async function getData(dispositivo){
   let records = await base('Sensors Data').select({
       view: "Grid view",
       fields: ["ID Sensor","Dispositivo","Valor","Timestamp","Hour"],
-      maxRecords: 60,
+      maxRecords: 800,
       filterByFormula: formula
   }).all()
   return records
@@ -158,17 +158,17 @@ function show(result){
     data: S_A2_1
   }],
     chart: {
-    height: 350,
+    height: 800,
     type: 'line',
     zoom: {
-      enabled: false
+      enabled: true
     }
   },
   dataLabels: {
-    enabled: false
+    enabled: true
   },
   stroke: {
-    curve: 'straight'
+    curve: 'smooth'
   },
   title: {
     align: 'left'
