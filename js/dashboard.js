@@ -91,7 +91,7 @@ function onMessageArrived(message) {
     let dispositivo = topico[2];
     let idSensor = topico[3];
     let parametro = topico[4];
-    let valor = mensagem.valor;
+    let valor = mensagem.valor; if(valor>100){valor=100;} if(valor<0){valor=0};
     let Timestamp = mensagem.timestamp;
 
     if(parametro=="temperatura"){qualidade = analyzeTemperature(valor);}
